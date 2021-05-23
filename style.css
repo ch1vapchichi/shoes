@@ -1,0 +1,391 @@
+ body {
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  margin: 0 20% 0;
+  background:#000000 url("img/shoes12.png") repeat;
+  background-size: auto;
+}
+
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: normal;
+  color:rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+aside {
+  margin: 20px 0;
+  color: #c4c4c4;
+}
+
+p {
+color:rgb(255, 255, 255);
+text-align: left;
+}
+.submenu {
+  opacity: 0;
+  visibility: visible;
+}
+
+pre,
+code {
+  background-color: #fafaff;
+  border: 1px solid #c6c4f4;
+  border-radius: 4px;
+  color: #3632ad;
+  font-family: "Courier New", "Courier", monospace;
+}
+
+pre {
+  padding: 5px;
+}
+
+code {
+  padding: 2px 5px;
+}
+
+pre code {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+
+blockquote {
+  padding-left: 14px;
+  border-left: 2px solid #6a2cce;
+
+  color: #6a2cce;
+}
+
+cite {
+  color: #222222;
+}
+
+time {
+  color: #6a2cce;
+}
+
+a[href] {
+  color: #0099ef;
+  text-decoration: underline;
+}
+
+del {
+  color: #ff4400;
+}
+
+ins {
+  color: rgb(105, 178, 83);
+}
+
+del,
+ins {
+  text-decoration: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar-container {
+  text-align: center;
+}
+/* что было
+.blog-navigation {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(68, 112, 196, 0.7);
+  border: 5px solid #2d508f;
+  color: #ffffff;
+}
+*/
+
+/*це кнопка*/
+
+.sliding-button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: sticky;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+
+.blog-navigation {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(29, 27, 38, 0.9);
+/*  background-color: rgba(87, 5, 150, 0.7); */
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+}
+
+.blog-navigation p{
+  text-indent: 20px
+}
+.blog-navigation h2 {
+  margin-top: 0;
+}
+
+.blog-navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-navigation li {
+  margin-bottom: 5px;
+}
+
+.blog-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.skills dd {
+  margin: 0;
+  margin-bottom: 10px;
+
+  background-color: #e8e8e8;
+}
+
+.skills-level {
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4470c4;
+}
+
+.skills-level-ok {
+  background-color: #47bb52;
+}
+
+.days {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* рабочий фигур
+figure {
+  margin-left: 0;
+  margin-right: 0;
+} */
+
+figure {
+  display: inline-block; /* Выстраиваем по горизонтали */
+  background: rgb(89, 6, 145); /* Цвет фона */
+  padding: 5px; /* Поля */
+  margin: 0 1em 0 0; /* Отступ справа */
+  vertical-align: top; /* Выравниваем по верхнему краю */
+  color:rgb(255, 255, 255);
+ }
+
+figure img {
+  vertical-align: middle;
+  border: 8px solid rgb(212, 0, 255);
+}
+
+figcaption {
+
+  object-fit: cover;
+  width: 616px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(27, 2, 44);
+  
+} 
+
+.pagination a {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.pagination {
+  text-align: center;
+  color: #888888;
+}
+
+.danger-text {
+  color: #ff4400;
+}
+
+.danger-block {
+  padding: 5px 10px;
+  background-color: #423e3c;
+}
+
+.no-danger-block {
+  padding: 5px 10px;
+  background-color: #c6f5f0;
+}
+/*поканенужнаяхуйня
+footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  color: #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+} */
+
+.page-title {
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
+.partnership {
+  margin: 30px 0;
+  padding: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4a87fa;
+  background-image: url("img/footer1.png");
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.imgm {
+  width:100%;
+  object-fit: cover;
+ }
+
+
+
+/*це кнопка в конце*/
+
+.glow-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #5b0d80 inset, 0 0 0 0 #6b0361;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+  text-align: center;
+}
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 #25043f inset, 0 0 10px 4px #850870;
+  color: #000000;
+}
+
+/*спизженный подвал*/
+.container {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-footer .container {
+  max-width: 1408px;
+  text-align: right;
+}
+
+.page-footer {
+  padding: 40px 0;
+  background-color: rgba(38, 29, 41, 0.9);
+}
+
+.page-footer a {
+  margin-left: 56px;
+  color: #ffffff;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-email {
+  padding-left: 30px;
+  background-image: url("img/gmail.svg");
+}
+
+.footer-phone {
+  padding-left: 25px;
+  background-image: url("img/telephone.svg");
+}
+/*конец*/
+
+/*обтекание картинки текстом*/
+.leftimg {
+  float:left; /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+ }
+ .rightimg  {
+  float: right; /* Выравнивание по правому краю  */ 
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+ }
+
+ .raadius {
+  background: rgba(29, 27, 38, 0.9);/* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 10px; /* Поля вокруг текста */
+  margin: 10 0 10 0 ;
+  border-radius: 76px; /* Для современных браузеров */
+  background-size: cover;
+ }
